@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<form action="ass.php" method="GET">
+<input type="text" name="text1" id="txt1" onkeyup="ass()"><br /></input>
+<input type="text" name="text2" id="txt2" onkeyup="ass()"><br /></input>
+<input type="text" name="text3" id="txt3" onkeyup="ass()"><br /></input>
+<input type="text" name="text4" id="txt4" onkeyup="ass()"><br /></input>
+<input type="text" name="text5" id="txt5" onkeyup="ass()"><br /></input>
+</form>
+<script>
+function ass(){
+var a = document.getElementById("txt1");
+var b = document.getElementsByTagName("INPUT");
+for(var x = 0; x < b.length; x++){
+b[x].value = a.value;
+}
+}
+</script>
+</body>
+</html>
